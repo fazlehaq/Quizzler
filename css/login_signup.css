@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,600;0,700;1,400;1,600&display=swap');
+
+/* ! Variables And global property */
+:root{
+	font-size: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+	--primary-blue: #233975 ;
+}
+
+/* ? Body and tags  */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+
+h1{
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 1.5rem;
+	font-weight: 700;
+
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-blue);
+}
+
+a:hover{
+	text-decoration:underline;
+}
+.left-text{
+	color: aliceblue;
+	font-weight: 700;
+
+}
+
+/* p, h1{
+	color: whitesmoke;
+} */
+
+/* .small{
+	font-size: 80%;
+	text-align: center; 
+} */
+
+/* ! Main css */
+ 
+
+.split-screen{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+}
+
+.left{
+	height: 200px;
+}
+
+.left, .right{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.left{
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.5)),url('../img/bgs/pexels-veeterzy-114979.jpg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.left .right{
+	color: white;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greayscale;
+
+}
+
+.left p ,h1{
+	font-weight: 400;
+	/* justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center; */
+	
+}
+
+.right{
+	overflow: scroll;
+}
+
+.right .sec{
+	color: black;
+	text-align: center;
+	justify-content: center;
+}
+
+.right .sec p{
+	/* margin: 1rem 0; */
+	margin: 0 ;
+	margin-bottom: 16px;
+	text-align: center;
+	font-size: 0.875rem;
+}
+
+.right form{
+	width: 328px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 8px;
+	border: 1px solid #c4c4c4;
+	padding: 8px;
+	margin-bottom: 1rem;
+	font-size: 0.875rem;
+}
+
+label{
+	display: block ;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+/* Show password check button */
+
+ .showPass label , .showPass input{
+	 display: inline;
+ }
+
+
+.signup-btn{
+	display: block;
+	width: 100%;
+	background: var(--primary-blue);
+	color: white;
+	font-weight: 700;
+	border: none;
+	padding: 1rem;
+	border-radius: 8px;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 20px;
+
+}
+
+.signup-btn:hover{
+	background: #2c4893;
+	cursor: pointer;
+}
+
+.imgs{
+	display: flex;
+	margin: auto;
+	width: 25%;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+/* ? Media query  */
+@media screen and (min-width: 900px) {
+	.split-screen{
+		flex-direction: row;
+	height: 100vh;
+
+	}
+
+	.left , .right{
+		display: flex;
+		width: 50%;
+		height: auto;
+	}
+
+	
+}
+
+@media screen and (max-width: 900px) {
+	.left p ,h1{	
+		text-align: center;
+	}
+}

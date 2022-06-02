@@ -1,0 +1,29 @@
+
+h1{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+h2{
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+form[action="mcq.php"]{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn{
+  background: #000;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.75rem;
+}
+
+.btn:hover{
+  background-color: whitesmoke;
+  border: 1px dotted black;
+}
+
